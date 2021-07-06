@@ -1,0 +1,648 @@
+/* Alles */
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f0e5cf;
+}
+
+/* menubar */
+
+#menubar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-direction: center;
+    flex-wrap: wrap;
+    height: 80px;
+    background-color: #c4ad84;
+    box-shadow: 0 0 10px gray;
+}
+
+#menubar a {
+    display: flex;
+    align-items: center;
+} 
+
+/* search bar menu*/
+
+#searchflex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.searchbar {
+    display: flex;
+    align-items: center;
+    width: 0px;
+    height: 0px;
+    background-color: #c4ad84;
+    outline: none;
+    border: none;
+    transition: all 0.5s ease 0.5s;
+}
+
+.searchbar:focus {
+    display: flex;
+    background-color: white;
+    border: 1px solid black;
+    width: 200px;
+    height: 20px;
+    outline: none;
+}
+
+#searchIcon {
+    font-size: 20px;
+    color: black;
+    margin: 1px;
+    padding: 4px 7px;
+    cursor: pointer;
+    border-radius: 100px;
+}
+
+/* menu links */
+
+.menulinks {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    letter-spacing: 0.5px;
+    padding: 9px 12px;
+    align-items: center;
+    justify-content: center;
+    height: 20px;
+}
+
+.menulinks a {
+    padding: 7px 12px;
+    color: black;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.menulinks a:hover {
+    color: saddlebrown;
+    transition: 0.5s;
+    text-decoration: underline saddlebrown;
+}
+
+#menu_left {
+    display: flex;
+    margin-left: 34%;
+}
+
+/* logo van menu */
+
+.logolink {
+    display: flex;
+    font-size: 20px;
+    max-height: 80px;
+    margin-left: 10%;
+}
+
+.logoDesign1, .logoDesign2 {
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    justify-self: center;
+    padding: 4px 20px;
+}
+
+.logoDesign1 {
+    background-color: rgb(56, 56, 56);
+    font-family: 'Archivo Black', sans-serif;
+    letter-spacing: 2px;
+    color: white;
+}
+
+.logoDesign2 {
+    border: 3px rgb(56, 56, 56);
+    color: rgb(56, 56, 56);
+    border-style: solid solid solid none;
+    font-family: 'Noto Sans', sans-serif;
+    letter-spacing: 1px;
+}
+
+.logoDesign2:hover {
+    background-color: rgb(56, 56, 56);
+    color: white;
+    transition: 0.3s;
+}
+
+/* index background */
+
+#index-background {
+    background-color: #f0e5cf;
+}
+
+/* index container */
+
+#index-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+}    
+
+/* banner */
+
+#banner {
+    height: 60vh;
+    background-image: url("../images/banner1.jpg");
+    background-attachment: fixed;
+    background-position: bottom;
+    background-size: cover;
+    line-height: 10px;
+}
+
+#bannercontent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 60vh;
+}
+
+#banner h1 {
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    font-size: 60px;
+    font-weight: 100;
+}
+
+#banner a {
+    color: black;    
+    border: 1px solid black;
+    text-decoration: none;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    padding: 17px 40px;
+}
+
+#banner a:hover {
+    background-color: rgb(56, 56, 56);
+    color: white;
+    transition: 1s;
+}
+
+#bannerBTN {
+    display: flex;
+    justify-content: center;
+    max-width: 550px;
+}
+/* top 10 boeken index */
+
+#top10new h2, #top10populair h2{
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    font-weight: 100;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* top 10 boeken button index*/
+
+.top10BTN {
+    padding: 10px 94px;
+    border: 1px solid black;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.top10BTN:hover {
+    background-color: rgb(56, 56, 56);
+    color: white;
+    transition: 1s;
+}
+
+.BTNcontainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* top 10 boeken IMG container (index)*/
+
+.top10booksIMGcontainer {
+    display: flex;
+    justify-content: center;
+    column-gap: 60px;
+    flex-wrap: wrap;
+}
+
+/* top 10 boeken IMG width/height (index) */
+
+.top10booksIMG {
+    width: 250px;
+    height: 377.57px;
+}
+
+/* boeken pagina */
+
+#boeken-background {
+    background-color: #f0e5cf;
+}
+
+/* boeken.php banner */
+
+#boeken-banner {
+    height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url('../images/boekenbanner.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: bottom;
+}
+
+#boeken-banner h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+    font-weight: 300;
+}
+
+/* boeken.php container */
+
+#boeken-container {
+    display: flex;
+    justify-content: center;
+}
+
+#boeken-container ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+#boeken-container li {
+    list-style-type: none;
+    border: 1px solid gray;
+    margin: 15px;
+    padding: 5px;
+}
+
+/* boeken.php box */
+
+.boeken-box {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 450px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    line-height: 5px;
+    border: 1px solid black;
+}
+
+.boeken-box h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+.boeken-box a {
+    color: black;
+    text-decoration: none;
+}
+
+.boeken-box h2 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 15px;
+}
+
+.boeken-box p {
+    color: gray;
+    font-family: 'Roboto', sans-serif;
+}
+
+.boekenIMG {
+    width: 200px;
+}
+
+/* aparte boekenpagina info */
+/* alle informatie van een boek */
+
+ .allbookinfo {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: #f0e5cf;
+ }
+
+
+/* boeken box 1 (titel en foto) */
+
+.infobox1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 50px;
+    justify-content: center;
+}
+
+.boekeninfoIMG {
+    width: 350px;
+    height: 531px;
+}
+
+
+/* boekeninformatie (titel/autheur/prijs) */
+
+.basicinfo {
+    display: flex;
+    margin-left: 20px;
+    flex-shrink: 1;
+    flex-direction: column;
+}
+
+.basicinfo h1 {
+    font-size: 50px;
+    width: 440px;
+}
+
+.basicinfo h2 {
+    color: gray;
+    font-size: 20px;
+}
+
+
+/* boekeninformatie (informatie bijvoorbeeld genre) */
+
+.detailedinfo {
+    display: flex;
+    height: 40vh;
+    flex-direction: column;
+    letter-spacing: 1px;
+}
+
+.informationbook {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+}
+
+/* boekeninformatie (samenvatting van het boek) */
+
+.samenvattingboek {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.samenvattingboek p {
+    width: 800px;
+}
+
+/*
+.infobox1 {
+    display: flex;
+    position: relative;
+    grid-area: infobox1;
+    align-items: center;
+    justify-content: center;
+}
+.boekeninfoIMG {
+    width: 250px;
+    margin-top: 50px;
+}
+
+.basicinfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    grid-area: infobox2;
+}
+
+.detailedinfo {
+    display: flex;
+    flex-direction: column;
+    grid-area: infobox3;
+    font-family: 'Roboto Condensed', sans-serif;
+    justify-content: center;
+    align-items: center;
+}
+
+.detailedinfo {
+    font-size: 19px;
+    line-height: 1px;
+}
+
+.samenvattingboek {
+    display: flex;
+    flex-direction: column;
+    width: 900px;
+    height: 400px;
+    grid-template: infobox4;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-bottom: 220px;
+}
+
+.samenvattingboek h1 {
+    font-size: 40px;
+}
+
+.samenvattingboek p {
+    font-size: 20px;
+}
+
+.basicinfo h1 {
+    font-size: 40px;
+} */
+
+
+
+/* footer */
+/* footer spacing */
+
+#footer-spacing {
+    background-color: transparent;
+    height: 140px;
+}
+
+/* footer grid */
+
+#footer-grid {
+    display: grid;
+    height: 55vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 80px 60px;
+    grid-template-areas:
+    "box1 box2 box3"
+    "box1 box2 box3"
+    "box1 box2 box3"
+    "box4 box4 box4"
+    "box5 box5 box5";
+    background-color: #d9c6a5;
+    color: black;
+}
+
+/* logo footer */
+
+.logofooter {
+    display: flex;
+}
+
+/* grid boxes for footer */
+
+#footerbox-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: box1;
+}
+
+#footerbox-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    grid-area: box2;
+}
+
+#footerbox-2 li {
+    font-size: 18px;
+    font-weight: 100;
+    font-family: 'Roboto', sans-serif;
+}
+
+#footerbox-2 h1 {
+    font-size: 40px;
+    font-weight: 100;
+    font-family: 'Roboto', sans-serif;
+}
+
+#footerbox-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    grid-area: box3;
+}
+
+#footerbox-3 h1 {
+    font-size: 40px;
+    font-weight: 100;
+    font-family: 'Roboto', sans-serif;
+}
+
+#footerbox-4 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    column-gap: 90px;
+    grid-area: box4;
+    border-top: 1px solid #aca28d;
+
+}
+
+#footerbox-4 a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 20px;
+}
+
+#footerbox-4 a:hover{
+    text-decoration: underline;
+    color: rgb(88, 88, 87);
+}
+
+#footerbox-5 {
+    display: flex;
+    grid-area: box5;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 10px;
+    align-items: center;
+    justify-content: center;
+    background-color:  #bdaa95;
+    border-top: 1px solid #aca28d;
+}
+
+/* google maps api */
+
+#map {
+    height: 300px;
+    width: 300px;
+    margin-bottom: 10px;
+}
+
+/* Contact pagina */
+
+#contactbanner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40vh;
+    background-image: url('../images/contact.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: top;
+}
+
+#contactbanner h1 {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+}
+
+#contactinhoud {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+}
+
+.contactinput {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}
+
+#contactBG {
+    background-color: burlywood;
+    width: 500px;
+    height: 500px;
+    margin-left: 500px;
+    border-radius: 5px;
+}
+
+#contactBG input{
+    padding: 4px 20px;
+}
+
+#contactBG label{
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#contactsubmit {
+    padding: 8px 30px;
+    background-color: beige;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+}
+
+
